@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Mainwrapper = (props) => {
+const MainWrapper = (props) => {
     return (
         <div id="main-wrapper">
             {props.children}
@@ -8,4 +8,4 @@ const Mainwrapper = (props) => {
     );
 };
 
-export default Mainwrapper;
+export default MainWrapper;

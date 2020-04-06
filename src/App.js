@@ -1,38 +1,37 @@
 import React from 'react';
 import { ComponenteData } from './context/DataContext';
-import Header from './components/header';
-import Sidebar from './components/sidebar';
-import Preloader from './components/preloader';
-import Mainwrapper from './components/mainwrapper';
-import Pagewrapper from './components/pagewrapper';
+import Header from './components/header/';
+import SideBar from './components/sidebar/';
+import PreLoader from './components/preloader';
+import MainWrapper from './components/wrappers/mainwrapper';
+import PageWrapper from './components/wrappers/pagewrapper';
 import Footer from './components/footer';
-import Containerfluid from './components/containerfluid';
-import Breadcrums from './components/breadcrums';
-import Maincontent from './components/maincontent';
+import ContainerFluid from './components/wrappers/containerfluid';
+import BreadCrums from './components/breadcrums';
+import MainContent from './components/maincontent';
 
 function App() {
 
   return (
     <ComponenteData>
-      <Mainwrapper>
-        <Preloader />
+      <MainWrapper>
+        <PreLoader />
         <Header />
-        <Sidebar />
-        <Pagewrapper>
-          <Containerfluid>
-            <Breadcrums />
-            <Maincontent>
+        <SideBar />
+        <PageWrapper>
+          <ContainerFluid>
+            <BreadCrums />
+            <MainContent>
               <div className="card">
                 <div className="card-body">
                   This is some text within a card block.
                 </div>
               </div>
-
-            </Maincontent>
-          </Containerfluid>
+            </MainContent>
+          </ContainerFluid>
           <Footer />
-        </Pagewrapper>
-      </Mainwrapper>
+        </PageWrapper>
+      </MainWrapper>
     </ComponenteData>
   );
 }

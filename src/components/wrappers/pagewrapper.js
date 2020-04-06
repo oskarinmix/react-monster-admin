@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Pagewrapper = (props) => {
+const PageWrapper = (props) => {
     return (
         <div className="page-wrapper">
             {props.children}
@@ -8,4 +8,4 @@ const Pagewrapper = (props) => {
     );
 };
 
-export default Pagewrapper;
+export default PageWrapper;

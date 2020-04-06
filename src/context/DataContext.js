@@ -1,12 +1,10 @@
-import React from 'react'
-import { apiJson } from '../data/api'
-const DataContext = React.createContext()
-const ComponenteData = ({ children }) => {
-    return (
-        <DataContext.Provider value={apiJson}>
-            {children}
-        </DataContext.Provider>
-    );
+import React, { useMemo } from "react";
+import { apiJson } from "../data/api";
+import useUser from "../hooks/useUser";
 
-}
+const DataContext = React.createContext();
+const ComponenteData = (props) => {
+  const value = useUser();
+  return <DataContext.Provider value={value} {...props} />;
+};
 export { ComponenteData, DataContext };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Breadcrums = () => {
+const BreadCrums = () => {
     return (
         <div className="row page-titles">
             <div className="col-md-6 col-8 align-self-center">
@@ -14,4 +14,4 @@ const Breadcrums = () => {
     );
 };
 
-export default Breadcrums;
+export default BreadCrums;

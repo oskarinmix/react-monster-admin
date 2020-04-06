@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Containerfluid = (props) => {
+const ContainerFluid = (props) => {
     return (
         <div className="container-fluid">
             {props.children}
@@ -8,4 +8,4 @@ const Containerfluid = (props) => {
     );
 };
 
-export default Containerfluid;
+export default ContainerFluid;
